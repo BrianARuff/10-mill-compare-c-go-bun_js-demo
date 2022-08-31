@@ -46,9 +46,7 @@ function main() {
   let count = 0;
 
   for (let i = 0; i < sortedAlbums.length; i++) {
-    if (sortedAlbums[i].rating > count) {
-      count = sortedAlbums[i].rating;
-    }
+    count++; 
   }
 
   console.log(`\nran ${count} times\n`);

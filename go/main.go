@@ -7,10 +7,10 @@ import (
 
 type Album struct {
 	id     string
-	title  string
+	name   string
 	artist string
-	price  float64
 	rating int
+	price  float64
 }
 
 func makeAlbums(n int) []Album {
@@ -18,7 +18,7 @@ func makeAlbums(n int) []Album {
 	for i := 0; i < n; i++ {
 		albums[i] = Album{
 			id:     fmt.Sprintf("%d", i),
-			title:  fmt.Sprintf("Album %d", i),
+			name:   fmt.Sprintf("Album %d", i),
 			artist: "Artist",
 			price:  float64(i),
 			// random rating between 1 and 10
